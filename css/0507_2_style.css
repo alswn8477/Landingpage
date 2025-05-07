@@ -1,32 +1,5 @@
 @charset "utf-8";
-@font-face {
-  font-family: "KakaoBigSans-ExtraBold";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2503@1.0/KakaoBigSans-ExtraBold.woff2")
-    format("woff2");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Ownglyph_StudyHard-Rg";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_StudyHard-Rg.woff2")
-    format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Ownglyph_corncorn-Rg";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2")
-    format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "ChosunGu";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+
 @font-face {
   font-family: "GowunDodum-Regular";
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff")
@@ -47,22 +20,27 @@ li {
 }
 a {
   text-decoration: none;
-  color: #fff;
+  color: #17450b;
 }
 body {
   font-family: GowunDodum-Regular;
-  color: #333;
+  color: #17450b;
 }
 #section0 {
   width: 100%;
   height: 100vh;
-  background: #f7fff5;
+  background: url(../images/bg2.jpg) center/cover;
+}
+#section0 canvas {
+  width: 100%;
+  display: block;
+  position: absolute;
 }
 #section0 h5 {
   width: 50%;
   margin: 0 auto;
   font-size: 50px;
-  color: #666;
+  color: #8ec37f;
   /* -webkit-text-stroke: 1px gray; */
   display: flex;
   justify-content: center;
@@ -79,7 +57,7 @@ body {
   line-height: 0.5;
   letter-spacing: 20px;
   font-size: 150px;
-  color: #000;
+  color: #175806;
   /* text-shadow: 5px 5px 10px gray; */
   transition: 0.5s;
   position: relative;
@@ -93,7 +71,7 @@ body {
 #section0 h1 span {
   font-size: 30px;
 }
-#section0 .icon {
+/* #section0 .icon {
   width: 100%;
   padding: 0 100px;
   box-sizing: border-box;
@@ -117,19 +95,19 @@ body {
 }
 #section0 .icon p:nth-child(2n + 1) img:hover {
   transform: rotate(-15deg);
-}
+} */
 #section0 h3 {
   margin: 50px auto 0;
   text-align: center;
   font-size: 50px;
-  color: #333;
+  color: #175806;
   /* -webkit-text-stroke: 2px black; */
 }
 
 #section1 {
   width: 100%;
-  height: 100%;
-  background: #effeeb;
+  height: 100vh;
+  background: url(../images/bg2.jpg) center/cover;
 }
 #section1 h1 {
   width: 50%;
@@ -137,7 +115,7 @@ body {
   box-sizing: border-box;
   text-align: center;
   font-size: 100px;
-  color: #000;
+  color: #175806;
   /* text-shadow: 5px 5px 10px gray; */
 }
 #section1 ul {
@@ -171,7 +149,7 @@ body {
 #section1 ul li:nth-child(2) p {
   width: 50%;
   font-size: 30px;
-  color: #000;
+  color: #175806;
 }
 #section1 ul li:nth-child(2) p img {
   width: 50px;
@@ -182,8 +160,8 @@ body {
 
 #section2 {
   width: 100%;
-  height: 100%;
-  background: #e7ffe0;
+  height: 100vh;
+  background: url(../images/bg2.jpg) center/cover;
 }
 #section2 h1 {
   width: 50%;
@@ -191,6 +169,59 @@ body {
   box-sizing: border-box;
   text-align: center;
   font-size: 100px;
-  color: #000;
+  color: #175806;
   /* text-shadow: 5px 5px 10px gray; */
+}
+#section2 .con {
+  width: 100%;
+  padding: 50px;
+}
+#section2 .con ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  width: 100%;
+}
+#section2 .con ul li {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+}
+#section2 .con ul li a {
+  display: block;
+  width: 100%;
+  border: 1px solid #175806;
+}
+#section2 ul li a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+#section2 .con ul li p {
+  font-size: 20px;
+  font-weight: bold;
+  font-weight: bold;
+}
+
+#section3 {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/bg2.jpg) center/cover;
+}
+#section3 h1 {
+  width: 50%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 100px;
+  color: #175806;
+  /* text-shadow: 5px 5px 10px gray; */
+}
+#section3 .con {
+  width: 100%;
 }
