@@ -695,9 +695,6 @@ body {
   #section3 .con .txt {
     width: 100%;
   }
-  #section3 .con .txt .brand p {
-    /* text-align: left; */
-  }
   #section2 .con .txt .brand h5,
   #section3 .con .txt .brand h5 {
     font-size: 15px;
