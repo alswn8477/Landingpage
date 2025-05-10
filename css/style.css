@@ -533,7 +533,8 @@ body {
   }
   #section1 h1,
   #section2 h1,
-  #section3 h1 {
+  #section3 h1,
+  #section4 h1 {
     font-size: 60px;
   }
   #section1 .down .list {
@@ -566,7 +567,28 @@ body {
   #section3 .con .txt .detail p {
     font-size: 15px;
   }
+
+  #section4 .con {
+    padding: 0 100px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  #section4 .con .left .photo img {
+    width: 100px;
+    height: 200px;
+  }
+
+  #section4 .con .right .mobile .txt {
+    width: 35%;
+    top: 40px;
+  }
+  #section4 .con .right .mobile .txt::after {
+    width: 100%;
+    height: 1050%;
+  }
 }
+
 @media screen and (max-width: 1024px) {
   #section0 h5 {
     font-size: 20px;
