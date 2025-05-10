@@ -114,19 +114,3 @@ leafImage.onload = () => {
 }
 
 // section4
-$(function () {
-  let x = 0;
-  let y = 0;
-  $("#left").click(function () {
-    $(".box").css("transform", `rotateY(${(y -= 90)}deg)`);
-  });
-  $("#right").click(function () {
-    $(".box").css("transform", `rotateY(${(y += 90)}deg)`);
-  });
-  $("#up").click(function () {
-    $(".box").css("transform", `rotateX(${(x += 90)}deg)`);
-  });
-  $("#down").click(function () {
-    $(".box").css("transform", `rotateX(${(x -= 90)}deg)`);
-  });
-});
