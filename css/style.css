@@ -564,6 +564,9 @@ body {
 #section5 .con h2 span {
   font-size: 20px;
 }
+#section5 .con h5 {
+  font-size: 20px;
+}
 
 @media screen and (max-width: 1500px) {
   #section1 .con {
