@@ -20,43 +20,59 @@ a {
   text-decoration: none;
   color: #17450b;
 }
+html,
 body {
+  overflow-x: hidden !important;
   font-family: GowunDodum-Regular;
   color: #17450b;
 }
-#section0 {
-  width: 100%;
+.section {
+  width: 98%;
+  max-width: 1280px;
+  margin: 0 auto;
   height: 100vh;
-  background: #fff;
 }
-#section0 canvas#leafCanvas {
-  width: 100%;
+#section0 {
+  width: 98%;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100vh;
+}
+canvas#leafCanvas {
+  display: block;
+  width: 98%;
+  height: 100vh;
   position: fixed;
   left: 0;
   top: 0;
+  z-index: -1;
+  overflow: hidden;
 }
 #section0 h5 {
   width: 100%;
-  margin: 0 auto;
-  font-size: 50px;
+  margin: 0 auto 50px;
+  /* font-size: 50px; */
+  font-size: 2vw;
   color: #8ec37f;
   text-align: center;
 }
 #section0 h1 {
   width: 100%;
-  margin: 10px auto;
-  padding: 50px 10px;
+  margin: 100px auto;
+  /* padding: 50px 10px; */
   box-sizing: border-box;
   text-align: center;
   line-height: 0.5;
   letter-spacing: 20px;
-  font-size: 150px;
+  /* font-size: 150px; */
+  font-size: 10vw;
   color: #175806;
+  transform: scale(0.8);
   transition: 0.5s;
   position: relative;
 }
 #section0 h1:hover {
-  transform: scale(1.2);
+  transform: scale(1);
 }
 #section0 h1:hover .icon {
   transform: scale(0.5);
@@ -65,36 +81,40 @@ body {
   font-size: 30px;
 }
 #section0 h3 {
-  margin: 50px auto 0;
+  margin: 0 auto;
   text-align: center;
-  font-size: 50px;
+  font-size: 5vw;
   color: #175806;
 }
 
 #section1 {
-  width: 100%;
+  width: 98%;
+  max-width: 1280px;
+  margin: 0 auto;
   height: 100vh;
   background: #fff;
+  overflow: hidden;
 }
 #section1 h1 {
   width: 100%;
   text-align: center;
-  font-size: 100px;
+  font-size: 5vw;
   color: #175806;
   margin-bottom: 30px;
 }
 #section1 .down {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 #section1 .down .list {
-  flex: 1 1 100%;
+  width: 80%;
+  /* flex: 1 1 100%; */
   display: flex;
-  justify-content: center;
-  gap: 850px;
+  justify-content: space-between;
   align-items: center;
 }
 #section1 .down .list h2 {
@@ -122,13 +142,13 @@ body {
   }
 }
 #section1 .con {
-  width: 70%;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 #section1 .con .profile {
-  flex: 1 1 100%;
+  /* flex: 1 1 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,7 +168,7 @@ body {
   vertical-align: middle;
 }
 #section1 .con .photo {
-  flex: 1 1 100%;
+  /* flex: 1 1 100%; */
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -157,8 +177,10 @@ body {
   text-align: center;
 }
 #section1 .con .photo img {
-  width: 400px;
-  height: 400px;
+  /* width: 400px;
+  height: 400px;*/
+  width: 20vw;
+  height: 20vw;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -167,7 +189,7 @@ body {
   font-weight: bold;
 }
 #section1 .con .skills {
-  flex: 1 1 100%;
+  /* flex: 1 1 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,29 +220,36 @@ body {
 }
 
 #section11 {
-  width: 100%;
+  width: 98%;
+  max-width: 1280px;
+  margin: 0 auto;
   height: 100vh;
   background: #fff;
 }
 #section11 h1 {
   width: 100%;
   text-align: center;
-  font-size: 100px;
+  font-size: 5vw;
   color: #175806;
   margin-bottom: 30px;
 }
 #section11 .con {
-  width: 100%;
+  width: 98%;
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 #section11 .con ul {
-  width: 60%;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 30px;
+  align-items: center;
 }
 #section11 .con ul li {
   width: 100%;
@@ -231,10 +260,10 @@ body {
   font-size: 30px;
   font-weight: bold;
   color: #175806;
-  border-bottom: 2px solid #8ec37f;
+  border-bottom: 2px solid greenyellow;
 }
 #section11 .con ul li p {
-  width: 300px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -242,14 +271,16 @@ body {
 }
 
 #section2 {
-  width: 100%;
-  height: 100vh;
+  width: 98%;
+  max-width: 1280px;
+  margin: 0 auto;
+  /* height: 100vh; */
   background: #fff;
 }
 #section2 h1 {
   width: 100%;
   text-align: center;
-  font-size: 100px;
+  font-size: 5vw;
   color: #175806;
   margin-bottom: 30px;
 }
@@ -342,14 +373,15 @@ body {
 }
 
 #section3 {
-  width: 100%;
-  height: 100vh;
+  width: 98%;
+  max-width: 1280px;
+  margin: 0 auto;
   background: #fff;
 }
 #section3 h1 {
   width: 100%;
   text-align: center;
-  font-size: 100px;
+  font-size: 5vw;
   color: #175806;
   margin-bottom: 30px;
 }
@@ -447,7 +479,8 @@ body {
 
 #section4 {
   width: 100%;
-  height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
   background: #fff;
 }
 #section4 h1 {
@@ -455,25 +488,31 @@ body {
   margin: 0 auto;
   box-sizing: border-box;
   text-align: center;
-  font-size: 100px;
+  font-size: 5vw;
   color: #175806;
   margin-bottom: 30px;
 }
 #section4 .con {
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
   padding: 0 100px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0px;
+  gap: 10px;
+  position: relative;
+}
+#section4 .con .left {
+  position: relative;
 }
 #section4 .con .left .photo {
-  flex: 1 1 50%;
+  /* flex: 1 1 50%; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 5px;
   position: relative;
 }
 #section4 .con .left .photo::after {
@@ -484,23 +523,29 @@ body {
   width: 100%;
   height: 100%;
   background: #fff;
-  opacity: 0.9;
+  opacity: 0.8;
   transition: 0.5s;
 }
 #section4 .con .left:hover .photo::after,
-#section4 .con .left:hover .photo .txt {
+#section4 .con .left:hover .txt {
   opacity: 0;
 }
-#section4 .con .left .photo img {
+#section4 .con .left .photo li {
   flex: 1 1 30%;
+  border: 2px solid green;
+  border-radius: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section4 .con .left .photo img {
   width: 180px;
   height: 250px;
   object-fit: contain;
-  border: 2px solid green;
-  border-radius: 20px;
-  margin: 5px;
 }
-#section4 .con .left .photo .txt {
+#section4 .con .left .txt {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -572,8 +617,9 @@ body {
 }
 
 #section5 {
-  width: 100%;
-  height: 100vh;
+  width: 98%;
+  max-width: 1280px;
+  margin: 0 auto;
   background: #fff;
 }
 #section5 h1 {
@@ -582,7 +628,7 @@ body {
   padding: 50px 10px;
   box-sizing: border-box;
   text-align: center;
-  font-size: 100px;
+  font-size: 5vw;
   color: #175806;
   transition: 0.5s;
 }
@@ -619,363 +665,4 @@ body {
 }
 #section5 .con h5 {
   font-size: 20px;
-}
-
-@media screen and (max-width: 1500px) {
-  #section1 .con {
-    width: 80%;
-    gap: 50px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  #section1 .con {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 1280px) {
-  #section0 h5 {
-    font-size: 30px;
-  }
-  #section0 h1 {
-    font-size: 100px;
-  }
-  #section0 h1 span {
-    font-size: 20px;
-  }
-  #section1 h1,
-  #section2 h1,
-  #section3 h1,
-  #section4 h1,
-  #section5 h1 {
-    font-size: 60px;
-  }
-  #section1 .down .list {
-    gap: 600px;
-  }
-  #section1 .con .profile p {
-    font-size: 15px;
-  }
-  #section1 .con .profile p {
-    font-size: 16px;
-  }
-  #section1 .con .photo img {
-    width: 300px;
-    height: 300px;
-    object-fit: contain;
-    border-radius: 50%;
-  }
-  #section1 .con .photo h3 {
-    font-size: 18px;
-  }
-  #section2 .con,
-  #section3 .con {
-    width: 90%;
-  }
-  #section2 .con .txt .brand h5,
-  #section3 .con .txt .brand h5 {
-    font-size: 40px;
-  }
-  #section2 .con .txt .detail p,
-  #section3 .con .txt .detail p {
-    font-size: 15px;
-  }
-  #section4 .con {
-    padding: 0 50px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-  }
-  #section4 .con .left .photo img {
-    width: 100px;
-    height: 200px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  #section0 h5 {
-    font-size: 20px;
-  }
-  #section0 h1 {
-    font-size: 60px;
-  }
-  #section1 h1,
-  #section2 h1,
-  #section3 h1 {
-    font-size: 50px;
-  }
-  #section1 .down .list {
-    gap: 400px;
-  }
-  #section1 .down .list h2 {
-    font-size: 20px;
-  }
-  #section1 .con .profile p {
-    font-size: 13px;
-  }
-  #section1 .con .profile p img {
-    width: 30px;
-    height: 30px;
-  }
-  #section1 .con .photo img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    border-radius: 50%;
-  }
-  #section1 .con .photo h3 {
-    font-size: 12px;
-  }
-  #section1 .con .skills {
-    display: flex;
-    gap: 10px;
-  }
-  #section1 .con .skills div p {
-    width: 30px;
-    height: 30px;
-  }
-  #section2 .con .txt .detail p,
-  #section3 .con .txt .detail p {
-    font-size: 15px;
-  }
-  #section2 .con .txt .brand p,
-  #section3 .con .txt .brand p {
-    width: 300px;
-    font-size: 13px;
-  }
-  #section2 .con .txt .detail,
-  #section3 .con .txt .detail {
-    flex-direction: column;
-    gap: 20px;
-  }
-  #section2 .con .txt .detail .a,
-  #section3 .con .txt .detail .a {
-    gap: 10px;
-  }
-  #section2 .con .txt .detail .b .color img,
-  #section2 .con .txt .detail .b .logo img,
-  #section3 .con .txt .detail .b .color img,
-  #section3 .con .txt .detail .b .logo img {
-    width: 150px;
-  }
-  #section3 .con .txt .detail .b .color img {
-    width: 80px;
-  }
-  #section4 .con {
-    gap: 50px;
-  }
-  #section4 .con .left .photo img {
-    width: 100px;
-    height: 180px;
-  }
-  .iphone-frame {
-    width: 150px;
-    height: 300px;
-  }
-  .iphone-screen:hover img {
-    transform: translateY(-1320px);
-  }
-}
-@media screen and (max-width: 768px) {
-  #section0 h5 {
-    font-size: 15px;
-  }
-  #section0 h1 {
-    font-size: 35px;
-    padding: 10px 0;
-    letter-spacing: 10px;
-  }
-  #section0 h1 span {
-    font-size: 15px;
-  }
-  #section1 h1,
-  #section2 h1,
-  #section3 h1,
-  #section4 h1,
-  #section5 h1 {
-    font-size: 50px;
-  }
-  #section1 .down .list {
-    display: none;
-  }
-  #section1 .con {
-    flex-direction: column;
-    gap: 25px;
-  }
-  #section1 .con .profile {
-    gap: 0px;
-  }
-  #section1 .con .profile p {
-    font-size: 15px;
-  }
-  #section1 .con .profile p img {
-    width: 30px;
-    height: 30px;
-  }
-  #section1 .con .photo {
-    gap: 10px;
-  }
-  #section1 .con .photo h3 {
-    font-size: 15px;
-  }
-  #section1 .con .skills {
-    display: flex;
-    gap: 10px;
-  }
-  #section1 .con .skills div p {
-    width: 25px;
-    height: 25px;
-  }
-  #section2 .con,
-  #section3 .con {
-    flex-direction: column;
-    gap: 5px;
-  }
-  #section2 .con .photo a:nth-child(1) img,
-  #section3 .con .photo a:nth-child(1) img {
-    width: 200px;
-  }
-  #section2 .con .photo a:nth-child(2),
-  #section3 .con .photo a:nth-child(2) {
-    font-size: 10px;
-    padding: 2px 10px;
-  }
-  #section2 .con .txt,
-  #section3 .con .txt {
-    flex-direction: column;
-  }
-  #section2 .con .txt .brand,
-  #section3 .con .txt .brand {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    justify-content: center;
-    /* align-items: flex-start; */
-  }
-  #section2 .con .txt .brand h5,
-  #section3 .con .txt .brand h5 {
-    font-size: 15px;
-  }
-  #section2 .con .txt .brand p,
-  #section3 .con .txt .brand p {
-    width: 300px;
-    font-size: 10px;
-  }
-  #section2 .con .txt .detail p,
-  #section3 .con .txt .detail p {
-    font-size: 10px;
-  }
-  #section2 .con .txt .detail,
-  #section3 .con .txt .detail {
-    flex-direction: column;
-    gap: 20px;
-  }
-  #section2 .con .txt .detail .a,
-  #section3 .con .txt .detail .a {
-    gap: 10px;
-  }
-  #section2 .con .txt .detail .b .color img,
-  #section2 .con .txt .detail .b .logo img,
-  #section3 .con .txt .detail .b .color img,
-  #section3 .con .txt .detail .b .logo img {
-    width: 100px;
-  }
-  #section3 .con .txt .detail .b .color img {
-    width: 50px;
-  }
-  #section4 .con {
-    padding: 0 50px;
-    flex-direction: column;
-    gap: 10px;
-  }
-  #section4 .con .left .photo {
-    flex: 1 1 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  #section4 .con .left .photo img {
-    flex: 1 1 25%;
-    width: 100px;
-    height: 150px;
-  }
-  #section5 .con p {
-    width: 400px;
-    height: 400px;
-  }
-  #section5 .con h2 {
-    font-size: 30px;
-  }
-  #section5 .con h2 span {
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 480px) {
-  #section0 h5 {
-    font-size: 12px;
-  }
-  #section0 h1 {
-    font-size: 20px;
-  }
-  #section0 h1 span {
-    font-size: 10px;
-  }
-  #section1 h1,
-  #section2 h1,
-  #section3 h1,
-  #section4 h1 {
-    font-size: 30px;
-  }
-  #section1 .con {
-    gap: 15px;
-  }
-  #section1 .con .profile p {
-    font-size: 10px;
-  }
-  #section1 .con .profile p img {
-    width: 20px;
-    height: 20px;
-  }
-  #section1 .con .photo {
-    gap: 5px;
-  }
-  #section1 .con .photo h3 {
-    font-size: 10px;
-  }
-  #section2 .con,
-  #section3 .con {
-    flex-direction: column;
-    gap: 0;
-  }
-  #section2 .con .photo,
-  #section3 .con .photo {
-    gap: 0;
-  }
-  #section2 .con .photo a:nth-child(2),
-  #section3 .con .photo a:nth-child(2) {
-    position: relative;
-    top: -10px;
-  }
-  #section2 .con .txt,
-  #section3 .con .txt {
-    width: 100%;
-  }
-  #section2 .con .txt .brand h5,
-  #section3 .con .txt .brand h5 {
-    font-size: 15px;
-  }
-  #section2 .con .txt .brand p,
-  #section3 .con .txt .brand p {
-    width: 330px;
-  }
-  #section2 .con .txt .detail,
-  #section3 .con .txt .detail {
-    flex-direction: row;
-    gap: 20px;
-  }
-  #section2 .con .txt .detail .a,
-  #section3 .con .txt .detail .a {
-    gap: 5px;
-  }
 }

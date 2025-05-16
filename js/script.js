@@ -1,7 +1,7 @@
 // script.js
-function loadAlert() {
-  alert("Test!");
-}
+// function loadAlert() {
+//   alert("Test!");
+// }
 
 // 0507 fullpage
 // $(document).ready(function () {
@@ -14,8 +14,8 @@ function loadAlert() {
 // 0508
 // AOS 초기화
 AOS.init({
-  once: false, // 애니메이션을 여러 번 실행할 수 있도록 설정
-  startEvent: "load", // AOS 초기화 시점을 페이지 로딩으로 설정
+  once: true, // 애니메이션을 여러 번 실행할 수 있도록 설정
+  // startEvent: "load", // AOS 초기화 시점을 페이지 로딩으로 설정
   duration: 1000, // 애니메이션 지속 시간
   easing: "ease", // 애니메이션 이징
 });
@@ -23,6 +23,7 @@ AOS.init({
 // fullPage.js 설정
 $("#fullpage").fullpage({
   navigation: true,
+  responsiveWidth: 768,
   afterLoad: function (anchorLink, index, direction) {
     console.log(index);
     $(".section")
