@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1500px) {
+  #section1 .con {
+    width: 80%;
+    gap: 50px;
+  }
+  #section1 .con .photo h3 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  #section1 .con {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #section0 h5 {
+    font-size: 30px;
+  }
+  #section0 h1 {
+    font-size: 100px;
+  }
+  #section0 h1 span {
+    font-size: 20px;
+  }
+  #section1 h1,
+  #section2 h1,
+  #section3 h1,
+  #section4 h1,
+  #section5 h1 {
+    font-size: 60px;
+  }
+  #section1 .con .profile p {
+    font-size: 15px;
+  }
+  #section1 .con .profile p {
+    font-size: 16px;
+  }
+  #section1 .con .photo h3 {
+    font-size: 12px;
+  }
+  #section2 .con,
+  #section3 .con {
+    width: 90%;
+  }
+  #section2 .con .txt .brand h5,
+  #section3 .con .txt .brand h5 {
+    font-size: 40px;
+  }
+  #section2 .con .txt .detail p,
+  #section3 .con .txt .detail p {
+    font-size: 15px;
+  }
+  #section4 .con {
+    padding: 0 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+  }
+  #section4 .con .left .photo img {
+    width: 100px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #section0 h5 {
+    font-size: 20px;
+  }
+  #section0 h1 {
+    font-size: 60px;
+  }
+  #section1 h1,
+  #section2 h1,
+  #section3 h1 {
+    font-size: 50px;
+  }
+  #section1 .down .list h2 {
+    font-size: 20px;
+  }
+  #section1 .con .profile p {
+    font-size: 13px;
+  }
+  #section1 .con .profile p img {
+    width: 30px;
+    height: 30px;
+  }
+  #section1 .con .photo h3 {
+    font-size: 10px;
+  }
+  #section1 .con .skills {
+    display: flex;
+    gap: 10px;
+  }
+  #section1 .con .skills div p {
+    width: 30px;
+    height: 30px;
+  }
+  #section2 .con .txt .detail p,
+  #section3 .con .txt .detail p {
+    font-size: 15px;
+  }
+  #section2 .con .txt .brand p,
+  #section3 .con .txt .brand p {
+    width: 300px;
+    font-size: 13px;
+  }
+  #section2 .con .txt .detail,
+  #section3 .con .txt .detail {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #section2 .con .txt .detail .a,
+  #section3 .con .txt .detail .a {
+    gap: 10px;
+  }
+  #section2 .con .txt .detail .b .color img,
+  #section2 .con .txt .detail .b .logo img,
+  #section3 .con .txt .detail .b .color img,
+  #section3 .con .txt .detail .b .logo img {
+    width: 150px;
+  }
+  #section3 .con .txt .detail .b .color img {
+    width: 80px;
+  }
+  #section4 .con {
+    gap: 50px;
+  }
+  #section4 .con .left .photo img {
+    width: 100px;
+    height: 180px;
+  }
+  .iphone-frame {
+    width: 150px;
+    height: 300px;
+  }
+  .iphone-screen:hover img {
+    transform: translateY(-1320px);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #section1 .con {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #section1 .con .photo h3 {
+    font-size: 13px;
+  }
+  #section11 .con ul li p {
+    font-size: 20px;
+  }
+  #section2 .con .txt .detail {
+    flex-direction: column;
+  }
+  #section3 .con .txt .detail {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  #section1,
+  #section11,
+  #section2,
+  #section3 {
+    height: auto !important;
+  }
+  #section1 .con {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #section1 .con .photo {
+    display: block;
+  }
+  #section1 .con .photo h3 {
+    font-size: 10px;
+  }
+  #section11 .con ul li p {
+    font-size: 16px;
+  }
+  #section2 .con .txt .brand p,
+  #section3 .con .txt .brand p {
+    width: auto;
+  }
+  #section3 {
+    margin: 50px 0;
+  }
+  #section2 .con,
+  #section3 .con {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #section4 .con {
+    flex-direction: column;
+    padding: 0;
+  }
+  #section4 .con .left .photo {
+    gap: 20px;
+  }
+  #section4 .con .left .photo img {
+    width: 100%;
+  }
+}
